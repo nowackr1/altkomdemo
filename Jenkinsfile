@@ -1,3 +1,4 @@
+pipeline {
 agent any
 environment {
    MainEnvConfig = 'someconfig'
@@ -79,4 +80,5 @@ stages {
 	   echo "jesli to widzisz, to niestety był gdzieś fail :("
 	}
    }
+}
 }
