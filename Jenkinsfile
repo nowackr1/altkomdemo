@@ -58,8 +58,6 @@ stages {
 	   dir("Calculator") {
    	      bat "${dotnet} clean"
 	   }
-	}
-	steps {
 	   dir("CalculatorTests") {
    	      bat "${dotnet} clean"
 	   }
