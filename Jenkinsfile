@@ -27,6 +27,10 @@ stages {
 		println "a jest mniejsze badz rowne 3"
 	   }
 	   }
+	}
+   }
+   stage ('Parallel') {
+	steps {
 	   parallel (
 		"TaskOne" : {
 		   echo 'task 1 stuff part 1'
