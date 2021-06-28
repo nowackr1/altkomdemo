@@ -72,15 +72,15 @@ stages {
 	always {
 	   echo "to zawsze bedzie wykonane"
 	}
-	success {
-	   echo "to bedzie wykonane w razie sukcesu"
+	failure {
 	   mail to: 'krzysztof.nowacki@posti.com',
 	   subject: "build info",
 	   body: "build success"
-	}
-	failure {
 	   echo "to bedzie wykonane w razie faila"
 	   echo "jesli to widzisz, to niestety był gdzieś fail :("
+	}
+	success {
+	   echo "to bedzie wykonane w razie sukcesu"
 	}
    }
 }
