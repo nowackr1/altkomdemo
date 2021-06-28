@@ -63,6 +63,7 @@ stages {
 	   }
 	}
    }
+   }
    post {
 	always {
 	   echo "to zawsze bedzie wykonane"
@@ -78,5 +79,4 @@ stages {
 	   echo "jesli to widzisz, to niestety był gdzieś fail :("
 	}
    }
-}
 }
