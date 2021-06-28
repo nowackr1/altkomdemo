@@ -30,7 +30,7 @@ stages {
 		"TaskOne" : {
 		   echo 'task 1 stuff part 1'
 		   echo 'task 1 stuff part 2'
-		}
+		},
 		"TaskTwo" : {
 		   echo 'task 2 stuff part 1'
 		   echo 'task 2 stuff part 2'
