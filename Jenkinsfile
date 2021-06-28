@@ -25,6 +25,7 @@ stages {
 	   {
 		println "a jest mniejsze badz rowne 3"
 	   }
+	   }
 	   parallel (
 		"TaskOne" : {
 		   echo 'task 1 stuff part 1'
@@ -35,7 +36,6 @@ stages {
 		   echo 'task 2 stuff part 2'
 		}
 	   )
-	   }
 	}
    }
    stage('Build') {
@@ -76,6 +76,7 @@ stages {
 	}
 	failure {
 	   echo "to bedzie wykonane w razie faila"
+	   echo "jesli to widzisz, to niestety był gdzieś fail :("
 	}
    }
 }
